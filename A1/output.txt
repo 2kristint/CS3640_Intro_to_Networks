@@ -1,0 +1,62 @@
+kto, Kristin To.
+Command: date
+Wed Sep  4 09:43:49 PM UTC 2024
+
+*****
+Command: whoami
+kristin
+
+*****
+Command: ifconfig
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.17.84.147  netmask 255.255.192.0  broadcast 172.17.127.255
+        inet6 fe80::a00:27ff:fe33:6a4a  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:33:6a:4a  txqueuelen 1000  (Ethernet)
+        RX packets 308  bytes 26462 (26.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 326  bytes 25246 (25.2 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 146  bytes 12905 (12.9 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 146  bytes 12905 (12.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+
+*****
+Command: ping <INPUT> -c 10
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=115 time=15.8 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=115 time=21.6 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=115 time=21.5 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=115 time=14.8 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=115 time=14.2 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=115 time=30.1 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=115 time=22.2 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=115 time=21.0 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=115 time=22.3 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=115 time=19.0 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9096ms
+rtt min/avg/max/mdev = 14.152/20.238/30.128/4.449 ms
+
+*****
+Command: traceroute <INPUT> -m 10
+traceroute to 8.8.8.8 (8.8.8.8), 10 hops max
+  1   172.17.64.1  4.108ms  4.900ms  6.302ms 
+  2   10.254.240.74  5.131ms  2.757ms  3.616ms 
+  3   10.254.240.76  5.382ms  3.151ms  * 
+  4   10.254.241.10  16.539ms  3.819ms  3.211ms 
+  5   10.254.241.12  4.592ms  5.055ms  * 
+  6   128.255.2.40  35.523ms  6.385ms  7.201ms 
+  7   216.56.50.73  13.582ms  15.871ms  11.436ms 
+  8   72.14.218.180  13.614ms  11.967ms  16.641ms 
+  9   *  *  * 
+ 10   8.8.8.8  15.226ms  11.717ms  11.930ms 
+
+*****
