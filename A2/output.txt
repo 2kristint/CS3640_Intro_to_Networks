@@ -1,0 +1,21 @@
+kto, Kristin To.
+Server running...waiting for connections.
+Connected with client ('127.0.0.1', 57364)
+Connected with client ('127.0.0.1', 57374)
+Connected with client ('127.0.0.1', 46618)
+Recieved from ('127.0.0.1', 46618): hello
+Log from ('127.0.0.1', 57364): LOG: Received: hello
+Log from ('127.0.0.1', 57374): LOG: Received: hello
+Recieved from ('127.0.0.1', 46618): hello
+Log from ('127.0.0.1', 57374): LOG: Received: hello
+Log from ('127.0.0.1', 57364): LOG: Received: hello
+Recieved from ('127.0.0.1', 57374): hellllloooo
+Log from ('127.0.0.1', 57364): LOG: Received: hellllloooo
+Log from ('127.0.0.1', 46618): LOG: Received: hellllloooo
+Recieved from ('127.0.0.1', 57364): yup
+Log from ('127.0.0.1', 46618): LOG: Received: yup
+Log from ('127.0.0.1', 57374): LOG: Received: yup
+Disconnected from client: ('127.0.0.1', 57374)
+Connection with ('127.0.0.1', 57374) closed.
+Disconnected from client: ('127.0.0.1', 46618)
+Connection with ('127.0.0.1', 46618) closed.
